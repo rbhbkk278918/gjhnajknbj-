@@ -5,52 +5,7 @@
     <meta charset="UTF-8">
     <title>Сайт о коалах</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+        
 </head>
 <body>
 
