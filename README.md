@@ -53,6 +53,866 @@
     <p>&copy; 2023 Сайт о коалах</p>
 </footer>
 
+ <nav></nav>
+<ul> кранштад </ul>
+<ul>село пушкина</ul>
+<ul>эрмитаж</ul>
+<ul>исакевский собор </ul>
+
+
+ <li>  посетил </li>
+
+<li> кранштад </li>
+<img src="https://avatars.mds.yandex.net/i?id=0812da7b8624e4d7bc5680cd3ca97cf05988ed42-10470894-images-thumbs&n=13">
+<li>село пушкина</li>
+<img src="https://avatars.mds.yandex.net/i?id=3ff3e6e673b97d707544d738315be660a1a2a321-9694985-images-thumbs&n=13">
+<li> эрмитаж</li>
+<img src="https://avatars.mds.yandex.net/i?id=bbe0fc84facd53a2711b525f2ba95e27ff6c2d36-10603993-images-thumbs&n=13">
+<li>исакевский собор </li>
+<img src="https://avatars.mds.yandex.net/i?id=f1c0bf1289b983c38c6d3af5596f8b8b8cb794f2-10341337-images-thumbs&n=13">
+
+
+<header>
+    <div class="logo">
+        <img src="">
+        <img src="path_to_your_logo.png" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+    <!-- Добавьте кнопку для поиска, если нужно -->
+    <div class="search">
+        <input type="text" placeholder="Поиск...">
+        <button type="submit">Найти</button>
+    </div>
+</header>
+<div id="calendar"></div>
+
+<script>
+  function createCalendar(year, month) {
+    const daysInMonth = 32 - new Date(year, month, 32).getDate();
+    const firstDay = new Date(year, month, 1).getDay();
+
+    const monthNames = [
+      "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+      "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
+    ];
+
+    let html = '<h3>' + monthNames[month] + ' ' + year + '</h3>';
+    html += '<table>';
+    html += '<tr><th>Пн</th><th>Вт</th><th>Ср</th><th>Чт</th><th>Пт</th><th>Сб</th><th>Вс</th></tr>';
+    let day = 1;
+
+    for (let i = 0; i < 6; i++) {
+      html += '<tr>';
+
+      for (let j = 0; j < 7; j++) {
+        if (i === 0 && j < firstDay) {
+          html += '<td></td>';
+        } else if (day > daysInMonth) {
+          break;
+        } else {
+          html += '<td>' + day + '</td>';
+          day++;
+        }
+      }
+      html += '</tr>';
+    }
+    html += '</table>';
+
+    document.getElementById('calendar').innerHTML = html;
+  }
+
+  // Текущая дата
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const currentMonth = currentDate.getMonth();
+
+  createCalendar(currentYear, currentMonth);
+</script>
+<main>
+    <section id="about">
+        <h2>О нас</h2>
+        <li>  информация о вашей компании или проекте </li>
+    </section>
+
+    <section id="services">
+        <h2>Услуги</h2>
+        <li> информация о предоставляемых услугах </li>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <li> контактная информация</li>
+    </section>
+</main>
+
+<footer>
+    <div class="contact-info">
+        <li> адрес, телефон, email</li>
+    </div>
+    <div class="social-links">
+         <li>ссылки на социальные сети </li>
+    </div>
+    <div class="copyright">
+        <li> Информация об авторских правах </li>
+        &copy; 2023  Компания
+    </div>
+</footer>
+
+<div class="calculator">
+    <input type="number" id="num1" placeholder="Введите число">
+    <input type="number" id="num2" placeholder="Введите число">
+    <input type="text" id="operation" placeholder="Операция (+, -, *, /)">
+    <button onclick="calculate()">Посчитать</button>
+  </div>
+
+ <h1> меню навигации </h1>
+    <ul>
+ 	    <li><a href="#"> Главная </li>
+        <li><a href="#">  о нас </li>
+        <li><a href="#">  Услуги </li>
+        <ul>
+            <li><a href="#"> веб разработка </li>
+            <li><a href="#"> графический дизайн  </li>
+            <li><a href="#">  продукты</li>
+              <ul>
+                 <li><a href="#"> веб приложения </li>
+              <li><a href="#"> мобильные приложения </li> 
+            </ul>
+           </ul>   
+            <li><a href="#"> контакты </li>
+         </ul> 
+
+ <ul>
+        <li><a href="#home"> Главная </li>
+        <li><a href="#breakfast">  рецепты завтраков  </li>
+        <li><a href="#lunch"> рецепты обедов </li>
+        <li><a href="#dinner"> рецепты ужинов </li>
+        <li><a href="#desserts"> десерты </li>
+    </ul>
+
+<div id=" home">
+      	<h2>  добро пожаловать на сайт  с рецептами</h2>
+        <p>описание сайта</p>
+      </div>
+
+ <div id=" breakfast">
+      	<h2>рецепты завтраков</h2>
+        <p> описание</p>
+      </div>
+
+<div id=" lunch">
+      	<h2>рецепты обедов</h2>
+        <p>опсание</p>
+      </div>
+<div id=" dinner">
+      	<h2>рецепты ужинов</h2>
+        <p>опсание</p>
+      </div>
+
+
+<div id=" desserts">
+      	<h2>десерты</h2>
+        <p>опсание</p>
+      </div>
+
+<a href="https://www.gosuslugi.ru/">ujceceub</a>
+<a href="https://dnevnik.ru/userfeed">денвник</a>
+
+<table style="border: 1px solid black;">
+		 <tr>
+          <th style="background-color:text-align:left;">цена</th>
+           <th style="background-color:text-align:left;">название</th>        
+            <th style="background-color:text-align:left;">описание</th>
+         </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">200</td>
+             <td style="border: 1px solid; text-align: left;">блюдо1</td>
+             <td style="border: 1px solid; text-align: left;">описание</td>
+           </tr>
+<tn>
+
+    <td style="border: 1px solid; text-align: left;">100</td>
+    <td style="border: 1px solid; text-align: left;">блюдо2</td>
+             <td style="border: 1px solid; text-align: left;">описание</td>
+         </tr>
+        </tr>
+          <tn>
+
+             <td style="border: 1px solid; text-align: left;">430</td>
+             <td style="border: 1px solid; text-align: left;">блюдо3</td>
+             <td style="border: 1px solid; text-align: left;">опсание</td>
+         </tr>
+    </tr>
+        </tr>
+          <tn>
+
+             <td style="border: 1px solid; text-align: left;">160</td>
+             <td style="border: 1px solid; text-align: left;">блюдо4</td>
+             <td style="border: 1px solid; text-align: left;">описание</td>
+
+<table style="border: 1px solid black;">
+		 <tr>
+          <th style="background-color:text-align:left;">цена</th>
+           <th style="background-color:text-align:left;">название</th>        
+            <th style="background-color:text-align:left;">описание</th>
+         </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">200</td>
+             <td style="border: 1px solid; text-align: left;">блюдо1</td>
+             <td style="border: 1px solid; text-align: left;">описание</td>
+           </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">100</td>
+             <td style="border: 1px solid; text-align: left;">блюдо2</td>
+             <td style="border: 1px solid; text-align: left;">описание</td>
+         </tr>
+        </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">430</td>
+             <td style="border: 1px solid; text-align: left;">блюдо3</td>
+             <td style="border: 1px solid; text-align: left;">опсание</td>
+         </tr>
+        </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">160</td>
+             <td style="border: 1px solid; text-align: left;">блюдо4</td>
+             <td style="border: 1px solid; text-align: left;">описание</td>      
+	<table style="border: 1px solid black;">
+		 <tr>
+          <th style="background-color:text-align:left;">цена</th>
+           <th style="background-color:text-align:left;">название</th>        
+            <th style="background-color:text-align:left;">описание</th>
+         </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">200</td>
+             <td style="border: 1px solid; text-align: left;">блюдо1</td>
+             <td style="border: 1px solid; text-align: left;">описание</td>
+           </tr>
+          <tn>
+
+             <td style="border: 1px solid; text-align: left;">100</td>
+             <td style="border: 1px solid; text-align: left;">блюдо2</td>
+             <td style="border: 1px solid; text-align: left;">описание</td>
+         </tr>
+        </tr>
+          <tn>
+
+             <td style="border: 1px solid; text-align: left;">430</td>
+             <td style="border: 1px solid; text-align: left;">блюдо3</td>
+             <td style="border: 1px solid; text-align: left;">опсание</td>
+         </tr>
+    </tr>
+        </tr>
+          <tn>
+
+             <td style="border: 1px solid; text-align: left;">160</td>
+             <td style="border: 1px solid; text-align: left;">блюдо4</td>
+             <td style="border: 1px solid; text-align: left;">описание</td>
+
+
+<div>
+  <h1>Курс валют: CNY-RUB</h1>
+  <p id="exchangeRate"></p>
+</div>
+
+<script>
+  // Замените API_URL на URL вашего выбранного API для получения курса обмена
+  const API_URL = 'https://api.exchangerate-api.com/v4/latest/CNY';
+
+  // Функция для получения данных с API
+  async function fetchExchangeRate() {
+    try {
+      const response = await fetch(API_URL);
+      const data = await response.json();
+      const rate = data.rates.RUB; // Получаем курс обмена CNY к RUB
+      document.getElementById('exchangeRate').textContent = `1 CNY = ${rate} RUB`;
+    } catch (error) {
+      console.error('Ошибка получения данных:', error);
+      document.getElementById('exchangeRate').textContent = 'Ошибка получения данных';
+    }
+  }
+
+  // Вызываем функцию при загрузке страницы
+  window.onload = fetchExchangeRate;
+</script>
+<table style="border: 1px solid black;">
+        <tr>
+            <th style="background-color:text-align:left;">январь</th>
+          </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">ПН</td>
+             <td style="border: 1px solid; text-align: left;">ВТ</td>
+             <td style="border: 1px solid; text-align: left;">СР</td>
+             <td style="border: 1px solid; text-align: left;">ЧТ</td>
+             <td style="border: 1px solid; text-align: left;">ПН</td>       
+             <td style="border: 1px solid; text-align: left;">ПТ</td>
+             <td style="border: 1px solid; text-align: left;">СБ</td>
+             <td style="border: 1px solid; text-align: left;">ВС</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">1</td>
+             <td style="border: 1px solid; text-align: left;">2</td>
+             <td style="border: 1px solid; text-align: left;">3</td>
+             <td style="border: 1px solid; text-align: left;">4</td>
+             <td style="border: 1px solid; text-align: left;">5</td>   
+             <td style="border: 1px solid; text-align: left;">6</td>
+             <td style="border: 1px solid; text-align: left;">7</td>
+             <td style="border: 1px solid; text-align: left;">8</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">9</td>
+             <td style="border: 1px solid; text-align: left;">10</td>
+             <td style="border: 1px solid; text-align: left;">11</td>  
+             <td style="border: 1px solid; text-align: left;">12</td>
+             <td style="border: 1px solid; text-align: left;">13</td>      
+             <td style="border: 1px solid; text-align: left;">14</td>
+             <td style="border: 1px solid; text-align: left;">15</td>  
+             <td style="border: 1px solid; text-align: left;">16</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">17</td>
+             <td style="border: 1px solid; text-align: left;">18</td>
+             <td style="border: 1px solid; text-align: left;">19</td>
+             <td style="border: 1px solid; text-align: left;">20</td>
+             <td style="border: 1px solid; text-align: left;">21</td>  
+             <td style="border: 1px solid; text-align: left;">22</td>
+             <td style="border: 1px solid; text-align: left;">23</td>
+             <td style="border: 1px solid; text-align: left;">24</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">25</td>
+             <td style="border: 1px solid; text-align: left;">26</td>
+             <td style="border: 1px solid; text-align: left;">27</td>
+             <td style="border: 1px solid; text-align: left;">28</td>
+             <td style="border: 1px solid; text-align: left;">29</td>
+             <td style="border: 1px solid; text-align: left;">30</td>
+             <td style="border: 1px solid; text-align: left;">31</td>
+        <tr>
+          <th style="background-color:text-align:left;">февраль</th>
+          </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">ПН</td>
+             <td style="border: 1px solid; text-align: left;">ВТ</td>
+             <td style="border: 1px solid; text-align: left;">СР</td>
+             <td style="border: 1px solid; text-align: left;">ЧТ</td>
+             <td style="border: 1px solid; text-align: left;">ПН</td>       
+             <td style="border: 1px solid; text-align: left;">ПТ</td>
+             <td style="border: 1px solid; text-align: left;">СБ</td>
+             <td style="border: 1px solid; text-align: left;">ВС</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">1</td>
+             <td style="border: 1px solid; text-align: left;">2</td>
+             <td style="border: 1px solid; text-align: left;">3</td>
+             <td style="border: 1px solid; text-align: left;">4</td>
+             <td style="border: 1px solid; text-align: left;">5</td>   
+             <td style="border: 1px solid; text-align: left;">6</td>
+             <td style="border: 1px solid; text-align: left;">7</td>
+             <td style="border: 1px solid; text-align: left;">8</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">9</td>
+             <td style="border: 1px solid; text-align: left;">10</td>
+             <td style="border: 1px solid; text-align: left;">11</td>  
+             <td style="border: 1px solid; text-align: left;">12</td>
+             <td style="border: 1px solid; text-align: left;">13</td>      
+             <td style="border: 1px solid; text-align: left;">14</td>
+             <td style="border: 1px solid; text-align: left;">15</td>  
+             <td style="border: 1px solid; text-align: left;">16</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">17</td>
+             <td style="border: 1px solid; text-align: left;">18</td>
+             <td style="border: 1px solid; text-align: left;">19</td>
+             <td style="border: 1px solid; text-align: left;">20</td>
+             <td style="border: 1px solid; text-align: left;">21</td>  
+             <td style="border: 1px solid; text-align: left;">22</td>
+             <td style="border: 1px solid; text-align: left;">23</td>
+             <td style="border: 1px solid; text-align: left;">24</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">25</td>
+             <td style="border: 1px solid; text-align: left;">26</td>
+             <td style="border: 1px solid; text-align: left;">27</td>
+             <td style="border: 1px solid; text-align: left;">28</td>
+             <td style="border: 1px solid; text-align: left;">29</td>
+             <td style="border: 1px solid; text-align: left;">30</td>
+             <td style="border: 1px solid; text-align: left;">31</td>
+             <tr>
+      <th style="background-color:text-align:left;">март</th>
+          </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">ПН</td>
+             <td style="border: 1px solid; text-align: left;">ВТ</td>
+             <td style="border: 1px solid; text-align: left;">СР</td>
+             <td style="border: 1px solid; text-align: left;">ЧТ</td>
+             <td style="border: 1px solid; text-align: left;">ПН</td>       
+             <td style="border: 1px solid; text-align: left;">ПТ</td>
+             <td style="border: 1px solid; text-align: left;">СБ</td>
+             <td style="border: 1px solid; text-align: left;">ВС</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">1</td>
+             <td style="border: 1px solid; text-align: left;">2</td>
+             <td style="border: 1px solid; text-align: left;">3</td>
+             <td style="border: 1px solid; text-align: left;">4</td>
+             <td style="border: 1px solid; text-align: left;">5</td>   
+             <td style="border: 1px solid; text-align: left;">6</td>
+             <td style="border: 1px solid; text-align: left;">7</td>
+             <td style="border: 1px solid; text-align: left;">8</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">9</td>
+             <td style="border: 1px solid; text-align: left;">10</td>
+             <td style="border: 1px solid; text-align: left;">11</td>  
+             <td style="border: 1px solid; text-align: left;">12</td>
+             <td style="border: 1px solid; text-align: left;">13</td>      
+             <td style="border: 1px solid; text-align: left;">14</td>
+             <td style="border: 1px solid; text-align: left;">15</td>  
+             <td style="border: 1px solid; text-align: left;">16</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">17</td>
+             <td style="border: 1px solid; text-align: left;">18</td>
+             <td style="border: 1px solid; text-align: left;">19</td>
+             <td style="border: 1px solid; text-align: left;">20</td>
+             <td style="border: 1px solid; text-align: left;">21</td>  
+             <td style="border: 1px solid; text-align: left;">22</td>
+             <td style="border: 1px solid; text-align: left;">23</td>
+             <td style="border: 1px solid; text-align: left;">24</td>
+          </tr>
+          <tn>   	
+             <td style="border: 1px solid; text-align: left;">25</td>
+             <td style="border: 1px solid; text-align: left;">26</td>
+             <td style="border: 1px solid; text-align: left;">27</td>
+             <td style="border: 1px solid; text-align: left;">28</td>
+             <td style="border: 1px solid; text-align: left;">29</td>
+             <td style="border: 1px solid; text-align: left;">30</td>
+             <td style="border: 1px solid; text-align: left;">31</td>
+      <tr>
+     <th style="background-color:text-align:left;">май</th>
+          </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">ПН</td>
+             <td style="border: 1px solid; text-align: left;">ВТ</td>
+             <td style="border: 1px solid; text-align: left;">СР</td>
+             <td style="border: 1px solid; text-align: left;">ЧТ</td>
+             <td style="border: 1px solid; text-align: left;">ПН</td>       
+             <td style="border: 1px solid; text-align: left;">ПТ</td>
+             <td style="border: 1px solid; text-align: left;">СБ</td>
+             <td style="border: 1px solid; text-align: left;">ВС</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">1</td>
+             <td style="border: 1px solid; text-align: left;">2</td>
+             <td style="border: 1px solid; text-align: left;">3</td>
+             <td style="border: 1px solid; text-align: left;">4</td>
+             <td style="border: 1px solid; text-align: left;">5</td>   
+             <td style="border: 1px solid; text-align: left;">6</td>
+             <td style="border: 1px solid; text-align: left;">7</td>
+             <td style="border: 1px solid; text-align: left;">8</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">9</td>
+             <td style="border: 1px solid; text-align: left;">10</td>
+             <td style="border: 1px solid; text-align: left;">11</td>  
+             <td style="border: 1px solid; text-align: left;">12</td>
+             <td style="border: 1px solid; text-align: left;">13</td>      
+             <td style="border: 1px solid; text-align: left;">14</td>
+             <td style="border: 1px solid; text-align: left;">15</td>  
+             <td style="border: 1px solid; text-align: left;">16</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">17</td>
+             <td style="border: 1px solid; text-align: left;">18</td>
+             <td style="border: 1px solid; text-align: left;">19</td>
+             <td style="border: 1px solid; text-align: left;">20</td>
+             <td style="border: 1px solid; text-align: left;">21</td>  
+             <td style="border: 1px solid; text-align: left;">22</td>
+             <td style="border: 1px solid; text-align: left;">23</td>
+             <td style="border: 1px solid; text-align: left;">24</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">25</td>
+             <td style="border: 1px solid; text-align: left;">26</td>
+             <td style="border: 1px solid; text-align: left;">27</td>
+             <td style="border: 1px solid; text-align: left;">28</td>
+             <td style="border: 1px solid; text-align: left;">29</td>
+             <td style="border: 1px solid; text-align: left;">30</td>
+             <td style="border: 1px solid; text-align: left;">31</td>
+        <tr>
+       <th style="background-color:text-align:left;">июнь</th>
+          </tr> 
+          <tr>
+             <td style="border: 1px solid; text-align: left;">ПН</td>
+             <td style="border: 1px solid; text-align: left;">ВТ</td>
+             <td style="border: 1px solid; text-align: left;">СР</td>
+             <td style="border: 1px solid; text-align: left;">ЧТ</td>
+             <td style="border: 1px solid; text-align: left;">ПН</td>       
+             <td style="border: 1px solid; text-align: left;">ПТ</td>
+             <td style="border: 1px solid; text-align: left;">СБ</td>
+             <td style="border: 1px solid; text-align: left;">ВС</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">1</td>
+             <td style="border: 1px solid; text-align: left;">2</td>
+             <td style="border: 1px solid; text-align: left;">3</td>
+             <td style="border: 1px solid; text-align: left;">4</td>
+             <td style="border: 1px solid; text-align: left;">5</td>   
+             <td style="border: 1px solid; text-align: left;">6</td>
+             <td style="border: 1px solid; text-align: left;">7</td>
+             <td style="border: 1px solid; text-align: left;">8</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">9</td>
+             <td style="border: 1px solid; text-align: left;">10</td>
+             <td style="border: 1px solid; text-align: left;">11</td>  
+             <td style="border: 1px solid; text-align: left;">12</td>
+             <td style="border: 1px solid; text-align: left;">13</td>      
+             <td style="border: 1px solid; text-align: left;">14</td>
+             <td style="border: 1px solid; text-align: left;">15</td>  
+             <td style="border: 1px solid; text-align: left;">16</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">17</td>
+             <td style="border: 1px solid; text-align: left;">18</td>
+             <td style="border: 1px solid; text-align: left;">19</td>
+             <td style="border: 1px solid; text-align: left;">20</td>
+             <td style="border: 1px solid; text-align: left;">21</td>  
+             <td style="border: 1px solid; text-align: left;">22</td>
+             <td style="border: 1px solid; text-align: left;">23</td>
+             <td style="border: 1px solid; text-align: left;">24</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">25</td>
+             <td style="border: 1px solid; text-align: left;">26</td>
+             <td style="border: 1px solid; text-align: left;">27</td>
+             <td style="border: 1px solid; text-align: left;">28</td>
+             <td style="border: 1px solid; text-align: left;">29</td>
+             <td style="border: 1px solid; text-align: left;">30</td>
+             <td style="border: 1px solid; text-align: left;">31</td>
+        <tr>
+     <th style="background-color:text-align:left;">июль<th>
+          </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">ПН</td>
+             <td style="border: 1px solid; text-align: left;">ВТ</td>
+             <td style="border: 1px solid; text-align: left;">СР</td>
+             <td style="border: 1px solid; text-align: left;">ЧТ</td>
+             <td style="border: 1px solid; text-align: left;">ПН</td>       
+             <td style="border: 1px solid; text-align: left;">ПТ</td>
+             <td style="border: 1px solid; text-align: left;">СБ</td>
+             <td style="border: 1px solid; text-align: left;">ВС</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">1</td>
+             <td style="border: 1px solid; text-align: left;">2</td>
+             <td style="border: 1px solid; text-align: left;">3</td>
+             <td style="border: 1px solid; text-align: left;">4</td>
+             <td style="border: 1px solid; text-align: left;">5</td>   
+             <td style="border: 1px solid; text-align: left;">6</td>
+             <td style="border: 1px solid; text-align: left;">7</td>
+             <td style="border: 1px solid; text-align: left;">8</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">9</td>
+             <td style="border: 1px solid; text-align: left;">10</td>
+             <td style="border: 1px solid; text-align: left;">11</td>  
+             <td style="border: 1px solid; text-align: left;">12</td>
+             <td style="border: 1px solid; text-align: left;">13</td>      
+             <td style="border: 1px solid; text-align: left;">14</td>
+             <td style="border: 1px solid; text-align: left;">15</td>  
+             <td style="border: 1px solid; text-align: left;">16</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">17</td>
+             <td style="border: 1px solid; text-align: left;">18</td>
+             <td style="border: 1px solid; text-align: left;">19</td>
+             <td style="border: 1px solid; text-align: left;">20</td>
+             <td style="border: 1px solid; text-align: left;">21</td>  
+             <td style="border: 1px solid; text-align: left;">22</td>
+             <td style="border: 1px solid; text-align: left;">23</td>
+             <td style="border: 1px solid; text-align: left;">24</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">25</td>
+             <td style="border: 1px solid; text-align: left;">26</td>
+             <td style="border: 1px solid; text-align: left;">27</td>
+             <td style="border: 1px solid; text-align: left;">28</td>
+             <td style="border: 1px solid; text-align: left;">29</td>
+             <td style="border: 1px solid; text-align: left;">30</td>
+             <td style="border: 1px solid; text-align: left;">31</td>
+               <tr>
+              <th style="background-color:text-align:left;">август<th>
+          </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">ПН</td>
+             <td style="border: 1px solid; text-align: left;">ВТ</td>
+             <td style="border: 1px solid; text-align: left;">СР</td>
+             <td style="border: 1px solid; text-align: left;">ЧТ</td>
+             <td style="border: 1px solid; text-align: left;">ПН</td>       
+             <td style="border: 1px solid; text-align: left;">ПТ</td>
+             <td style="border: 1px solid; text-align: left;">СБ</td>
+             <td style="border: 1px solid; text-align: left;">ВС</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">1</td>
+             <td style="border: 1px solid; text-align: left;">2</td>
+             <td style="border: 1px solid; text-align: left;">3</td>
+             <td style="border: 1px solid; text-align: left;">4</td>
+             <td style="border: 1px solid; text-align: left;">5</td>   
+             <td style="border: 1px solid; text-align: left;">6</td>
+             <td style="border: 1px solid; text-align: left;">7</td>
+             <td style="border: 1px solid; text-align: left;">8</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">9</td>
+             <td style="border: 1px solid; text-align: left;">10</td>
+             <td style="border: 1px solid; text-align: left;">11</td>  
+             <td style="border: 1px solid; text-align: left;">12</td>
+             <td style="border: 1px solid; text-align: left;">13</td>      
+             <td style="border: 1px solid; text-align: left;">14</td>
+             <td style="border: 1px solid; text-align: left;">15</td>  
+             <td style="border: 1px solid; text-align: left;">16</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">17</td>
+             <td style="border: 1px solid; text-align: left;">18</td>
+             <td style="border: 1px solid; text-align: left;">19</td>
+             <td style="border: 1px solid; text-align: left;">20</td>
+             <td style="border: 1px solid; text-align: left;">21</td>  
+             <td style="border: 1px solid; text-align: left;">22</td>
+             <td style="border: 1px solid; text-align: left;">23</td>
+             <td style="border: 1px solid; text-align: left;">24</td>
+          </tr>
+          <tn>        
+             <td style="border: 1px solid; text-align: left;">25</td>
+             <td style="border: 1px solid; text-align: left;">26</td>
+             <td style="border: 1px solid; text-align: left;">27</td>
+             <td style="border: 1px solid; text-align: left;">28</td>
+             <td style="border: 1px solid; text-align: left;">29</td>
+             <td style="border: 1px solid; text-align: left;">30</td>
+             <td style="border: 1px solid; text-align: left;">31</td>
+            <tr>
+            <th style="background-color:text-align:left;">сентябрь<th>
+          </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">ПН</td>
+             <td style="border: 1px solid; text-align: left;">ВТ</td>
+             <td style="border: 1px solid; text-align: left;">СР</td>
+             <td style="border: 1px solid; text-align: left;">ЧТ</td>
+             <td style="border: 1px solid; text-align: left;">ПН</td>       
+             <td style="border: 1px solid; text-align: left;">ПТ</td>
+             <td style="border: 1px solid; text-align: left;">СБ</td>
+             <td style="border: 1px solid; text-align: left;">ВС</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">1</td>
+             <td style="border: 1px solid; text-align: left;">2</td>
+             <td style="border: 1px solid; text-align: left;">3</td>
+             <td style="border: 1px solid; text-align: left;">4</td>
+             <td style="border: 1px solid; text-align: left;">5</td>   
+             <td style="border: 1px solid; text-align: left;">6</td>
+             <td style="border: 1px solid; text-align: left;">7</td>
+             <td style="border: 1px solid; text-align: left;">8</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">9</td>
+             <td style="border: 1px solid; text-align: left;">10</td>
+             <td style="border: 1px solid; text-align: left;">11</td>  
+             <td style="border: 1px solid; text-align: left;">12</td>
+             <td style="border: 1px solid; text-align: left;">13</td>      
+             <td style="border: 1px solid; text-align: left;">14</td>
+             <td style="border: 1px solid; text-align: left;">15</td>  
+             <td style="border: 1px solid; text-align: left;">16</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">17</td>
+             <td style="border: 1px solid; text-align: left;">18</td>
+             <td style="border: 1px solid; text-align: left;">19</td>
+             <td style="border: 1px solid; text-align: left;">20</td>
+             <td style="border: 1px solid; text-align: left;">21</td>  
+             <td style="border: 1px solid; text-align: left;">22</td>
+             <td style="border: 1px solid; text-align: left;">23</td>
+             <td style="border: 1px solid; text-align: left;">24</td>
+          </tr>
+          <tn>          	
+             <td style="border: 1px solid; text-align: left;">25</td>
+             <td style="border: 1px solid; text-align: left;">26</td>
+             <td style="border: 1px solid; text-align: left;">27</td>
+             <td style="border: 1px solid; text-align: left;">28</td>
+             <td style="border: 1px solid; text-align: left;">29</td>
+             <td style="border: 1px solid; text-align: left;">30</td>
+             <td style="border: 1px solid; text-align: left;">31</td>
+              <tr>
+              <th style="background-color:text-align:left;">октябрь<th>
+          </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">ПН</td>
+             <td style="border: 1px solid; text-align: left;">ВТ</td>
+             <td style="border: 1px solid; text-align: left;">СР</td>
+             <td style="border: 1px solid; text-align: left;">ЧТ</td>
+             <td style="border: 1px solid; text-align: left;">ПН</td>       
+             <td style="border: 1px solid; text-align: left;">ПТ</td>
+             <td style="border: 1px solid; text-align: left;">СБ</td>
+             <td style="border: 1px solid; text-align: left;">ВС</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">1</td>
+             <td style="border: 1px solid; text-align: left;">2</td>
+             <td style="border: 1px solid; text-align: left;">3</td>
+             <td style="border: 1px solid; text-align: left;">4</td>
+             <td style="border: 1px solid; text-align: left;">5</td>   
+             <td style="border: 1px solid; text-align: left;">6</td>
+             <td style="border: 1px solid; text-align: left;">7</td>
+             <td style="border: 1px solid; text-align: left;">8</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">9</td>
+             <td style="border: 1px solid; text-align: left;">10</td>
+             <td style="border: 1px solid; text-align: left;">11</td>  
+             <td style="border: 1px solid; text-align: left;">12</td>
+             <td style="border: 1px solid; text-align: left;">13</td>      
+             <td style="border: 1px solid; text-align: left;">14</td>
+             <td style="border: 1px solid; text-align: left;">15</td>  
+             <td style="border: 1px solid; text-align: left;">16</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">17</td>
+             <td style="border: 1px solid; text-align: left;">18</td>
+             <td style="border: 1px solid; text-align: left;">19</td>
+             <td style="border: 1px solid; text-align: left;">20</td>
+             <td style="border: 1px solid; text-align: left;">21</td>  
+             <td style="border: 1px solid; text-align: left;">22</td>
+             <td style="border: 1px solid; text-align: left;">23</td>
+             <td style="border: 1px solid; text-align: left;">24</td>
+          </tr>
+          <tn>          	
+             <td style="border: 1px solid; text-align: left;">25</td>
+             <td style="border: 1px solid; text-align: left;">26</td>
+             <td style="border: 1px solid; text-align: left;">27</td>
+             <td style="border: 1px solid; text-align: left;">28</td>
+             <td style="border: 1px solid; text-align: left;">29</td>
+             <td style="border: 1px solid; text-align: left;">30</td>
+             <td style="border: 1px solid; text-align: left;">31</td>
+            <tr>
+           <th style="background-color:text-align:left;">ноябрь<th>
+          </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">ПН</td>
+             <td style="border: 1px solid; text-align: left;">ВТ</td>
+             <td style="border: 1px solid; text-align: left;">СР</td>
+             <td style="border: 1px solid; text-align: left;">ЧТ</td>
+             <td style="border: 1px solid; text-align: left;">ПН</td>       
+             <td style="border: 1px solid; text-align: left;">ПТ</td>
+             <td style="border: 1px solid; text-align: left;">СБ</td>
+             <td style="border: 1px solid; text-align: left;">ВС</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">1</td>
+             <td style="border: 1px solid; text-align: left;">2</td>
+             <td style="border: 1px solid; text-align: left;">3</td>
+             <td style="border: 1px solid; text-align: left;">4</td>
+             <td style="border: 1px solid; text-align: left;">5</td>   
+             <td style="border: 1px solid; text-align: left;">6</td>
+             <td style="border: 1px solid; text-align: left;">7</td>
+             <td style="border: 1px solid; text-align: left;">8</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">9</td>
+             <td style="border: 1px solid; text-align: left;">10</td>
+             <td style="border: 1px solid; text-align: left;">11</td>  
+             <td style="border: 1px solid; text-align: left;">12</td>
+             <td style="border: 1px solid; text-align: left;">13</td>      
+             <td style="border: 1px solid; text-align: left;">14</td>
+             <td style="border: 1px solid; text-align: left;">15</td>  
+             <td style="border: 1px solid; text-align: left;">16</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">17</td>
+             <td style="border: 1px solid; text-align: left;">18</td>
+             <td style="border: 1px solid; text-align: left;">19</td>
+             <td style="border: 1px solid; text-align: left;">20</td>
+             <td style="border: 1px solid; text-align: left;">21</td>  
+             <td style="border: 1px solid; text-align: left;">22</td>
+             <td style="border: 1px solid; text-align: left;">23</td>
+             <td style="border: 1px solid; text-align: left;">24</td>
+          </tr>
+          <tn>     	
+             <td style="border: 1px solid; text-align: left;">25</td>
+             <td style="border: 1px solid; text-align: left;">26</td>
+             <td style="border: 1px solid; text-align: left;">27</td>
+             <td style="border: 1px solid; text-align: left;">28</td>
+             <td style="border: 1px solid; text-align: left;">29</td>
+             <td style="border: 1px solid; text-align: left;">30</td>
+             <td style="border: 1px solid; text-align: left;">31</td>
+
+ <tr>
+ <th style="background-color:text-align:left;">декабрь<th>
+          </tr>  
+          <tr>
+             <td style="border: 1px solid; text-align: left;">ПН</td>
+             <td style="border: 1px solid; text-align: left;">ВТ</td>
+             <td style="border: 1px solid; text-align: left;">СР</td>
+             <td style="border: 1px solid; text-align: left;">ЧТ</td>
+             <td style="border: 1px solid; text-align: left;">ПН</td>       
+             <td style="border: 1px solid; text-align: left;">ПТ</td>
+             <td style="border: 1px solid; text-align: left;">СБ</td>
+             <td style="border: 1px solid; text-align: left;">ВС</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">1</td>
+             <td style="border: 1px solid; text-align: left;">2</td>
+             <td style="border: 1px solid; text-align: left;">3</td>
+             <td style="border: 1px solid; text-align: left;">4</td>
+             <td style="border: 1px solid; text-align: left;">5</td>   
+             <td style="border: 1px solid; text-align: left;">6</td>
+             <td style="border: 1px solid; text-align: left;">7</td>
+             <td style="border: 1px solid; text-align: left;">8</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">9</td>
+             <td style="border: 1px solid; text-align: left;">10</td>
+             <td style="border: 1px solid; text-align: left;">11</td>  
+             <td style="border: 1px solid; text-align: left;">12</td>
+             <td style="border: 1px solid; text-align: left;">13</td>      
+             <td style="border: 1px solid; text-align: left;">14</td>
+             <td style="border: 1px solid; text-align: left;">15</td>  
+             <td style="border: 1px solid; text-align: left;">16</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">17</td>
+             <td style="border: 1px solid; text-align: left;">18</td>
+             <td style="border: 1px solid; text-align: left;">19</td>
+             <td style="border: 1px solid; text-align: left;">20</td>
+             <td style="border: 1px solid; text-align: left;">21</td>  
+             <td style="border: 1px solid; text-align: left;">22</td>
+             <td style="border: 1px solid; text-align: left;">23</td>
+             <td style="border: 1px solid; text-align: left;">24</td>
+          </tr>
+          <tn>
+             <td style="border: 1px solid; text-align: left;">25</td>
+             <td style="border: 1px solid; text-align: left;">26</td>
+             <td style="border: 1px solid; text-align: left;">27</td>
+             <td style="border: 1px solid; text-align: left;">28</td>
+             <td style="border: 1px solid; text-align: left;">29</td>
+             <td style="border: 1px solid; text-align: left;">30</td>
+             <td style="border: 1px solid; text-align: left;">31</td>
+       </tr>
+
+
+
+
+
+
+
+                
 </body>
 </html>
 
