@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Сайт о коалах</title>
-    <style>
+   
         
 </head>
 <body>
