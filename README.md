@@ -224,6 +224,7 @@
            <th style="background-color:text-align:left;">название</th>        
             <th style="background-color:text-align:left;">описание</th>
          </tr>  
+	
           <tr>
              <td style="border: 1px solid; text-align: left;">200</td>
              <td style="border: 1px solid; text-align: left;">блюдо1</td>
@@ -235,22 +236,26 @@
              <td style="border: 1px solid; text-align: left;">описание</td>
          </tr>
         </tr>
+	
           <tn>
              <td style="border: 1px solid; text-align: left;">430</td>
              <td style="border: 1px solid; text-align: left;">блюдо3</td>
              <td style="border: 1px solid; text-align: left;">опсание</td>
          </tr>
         </tr>
+	
           <tn>
              <td style="border: 1px solid; text-align: left;">160</td>
              <td style="border: 1px solid; text-align: left;">блюдо4</td>
-             <td style="border: 1px solid; text-align: left;">описание</td>      
+             <td style="border: 1px solid; text-align: left;">описание</td> 
+	     
 	<table style="border: 1px solid black;">
 		 <tr>
           <th style="background-color:text-align:left;">цена</th>
            <th style="background-color:text-align:left;">название</th>        
             <th style="background-color:text-align:left;">описание</th>
          </tr>  
+	 
           <tr>
              <td style="border: 1px solid; text-align: left;">200</td>
              <td style="border: 1px solid; text-align: left;">блюдо1</td>
@@ -318,6 +323,7 @@
              <td style="border: 1px solid; text-align: left;">ВС</td>
           </tr>
           <tn>
+		  
              <td style="border: 1px solid; text-align: left;">1</td>
              <td style="border: 1px solid; text-align: left;">2</td>
              <td style="border: 1px solid; text-align: left;">3</td>
@@ -328,6 +334,7 @@
              <td style="border: 1px solid; text-align: left;">8</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">9</td>
              <td style="border: 1px solid; text-align: left;">10</td>
              <td style="border: 1px solid; text-align: left;">11</td>  
@@ -338,6 +345,7 @@
              <td style="border: 1px solid; text-align: left;">16</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">17</td>
              <td style="border: 1px solid; text-align: left;">18</td>
              <td style="border: 1px solid; text-align: left;">19</td>
@@ -348,6 +356,7 @@
              <td style="border: 1px solid; text-align: left;">24</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">25</td>
              <td style="border: 1px solid; text-align: left;">26</td>
              <td style="border: 1px solid; text-align: left;">27</td>
@@ -359,6 +368,7 @@
           <th style="background-color:text-align:left;">февраль</th>
           </tr>  
           <tr>
+	  
              <td style="border: 1px solid; text-align: left;">ПН</td>
              <td style="border: 1px solid; text-align: left;">ВТ</td>
              <td style="border: 1px solid; text-align: left;">СР</td>
@@ -369,6 +379,7 @@
              <td style="border: 1px solid; text-align: left;">ВС</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">1</td>
              <td style="border: 1px solid; text-align: left;">2</td>
              <td style="border: 1px solid; text-align: left;">3</td>
@@ -379,6 +390,7 @@
              <td style="border: 1px solid; text-align: left;">8</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">9</td>
              <td style="border: 1px solid; text-align: left;">10</td>
              <td style="border: 1px solid; text-align: left;">11</td>  
@@ -389,6 +401,7 @@
              <td style="border: 1px solid; text-align: left;">16</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">17</td>
              <td style="border: 1px solid; text-align: left;">18</td>
              <td style="border: 1px solid; text-align: left;">19</td>
@@ -410,6 +423,7 @@
       <th style="background-color:text-align:left;">март</th>
           </tr>  
           <tr>
+	  
              <td style="border: 1px solid; text-align: left;">ПН</td>
              <td style="border: 1px solid; text-align: left;">ВТ</td>
              <td style="border: 1px solid; text-align: left;">СР</td>
@@ -420,6 +434,7 @@
              <td style="border: 1px solid; text-align: left;">ВС</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">1</td>
              <td style="border: 1px solid; text-align: left;">2</td>
              <td style="border: 1px solid; text-align: left;">3</td>
@@ -430,6 +445,7 @@
              <td style="border: 1px solid; text-align: left;">8</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">9</td>
              <td style="border: 1px solid; text-align: left;">10</td>
              <td style="border: 1px solid; text-align: left;">11</td>  
@@ -440,6 +456,7 @@
              <td style="border: 1px solid; text-align: left;">16</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">17</td>
              <td style="border: 1px solid; text-align: left;">18</td>
              <td style="border: 1px solid; text-align: left;">19</td>
@@ -449,7 +466,8 @@
              <td style="border: 1px solid; text-align: left;">23</td>
              <td style="border: 1px solid; text-align: left;">24</td>
           </tr>
-          <tn>   	
+          <tn>   
+	  
              <td style="border: 1px solid; text-align: left;">25</td>
              <td style="border: 1px solid; text-align: left;">26</td>
              <td style="border: 1px solid; text-align: left;">27</td>
@@ -461,6 +479,7 @@
      <th style="background-color:text-align:left;">май</th>
           </tr>  
           <tr>
+	  
              <td style="border: 1px solid; text-align: left;">ПН</td>
              <td style="border: 1px solid; text-align: left;">ВТ</td>
              <td style="border: 1px solid; text-align: left;">СР</td>
@@ -471,6 +490,7 @@
              <td style="border: 1px solid; text-align: left;">ВС</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">1</td>
              <td style="border: 1px solid; text-align: left;">2</td>
              <td style="border: 1px solid; text-align: left;">3</td>
@@ -481,6 +501,7 @@
              <td style="border: 1px solid; text-align: left;">8</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">9</td>
              <td style="border: 1px solid; text-align: left;">10</td>
              <td style="border: 1px solid; text-align: left;">11</td>  
@@ -491,6 +512,7 @@
              <td style="border: 1px solid; text-align: left;">16</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">17</td>
              <td style="border: 1px solid; text-align: left;">18</td>
              <td style="border: 1px solid; text-align: left;">19</td>
@@ -501,6 +523,7 @@
              <td style="border: 1px solid; text-align: left;">24</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">25</td>
              <td style="border: 1px solid; text-align: left;">26</td>
              <td style="border: 1px solid; text-align: left;">27</td>
@@ -512,6 +535,7 @@
        <th style="background-color:text-align:left;">июнь</th>
           </tr> 
           <tr>
+	  
              <td style="border: 1px solid; text-align: left;">ПН</td>
              <td style="border: 1px solid; text-align: left;">ВТ</td>
              <td style="border: 1px solid; text-align: left;">СР</td>
@@ -522,6 +546,7 @@
              <td style="border: 1px solid; text-align: left;">ВС</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">1</td>
              <td style="border: 1px solid; text-align: left;">2</td>
              <td style="border: 1px solid; text-align: left;">3</td>
@@ -532,6 +557,7 @@
              <td style="border: 1px solid; text-align: left;">8</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">9</td>
              <td style="border: 1px solid; text-align: left;">10</td>
              <td style="border: 1px solid; text-align: left;">11</td>  
@@ -542,6 +568,7 @@
              <td style="border: 1px solid; text-align: left;">16</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">17</td>
              <td style="border: 1px solid; text-align: left;">18</td>
              <td style="border: 1px solid; text-align: left;">19</td>
@@ -552,6 +579,7 @@
              <td style="border: 1px solid; text-align: left;">24</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">25</td>
              <td style="border: 1px solid; text-align: left;">26</td>
              <td style="border: 1px solid; text-align: left;">27</td>
@@ -563,6 +591,7 @@
      <th style="background-color:text-align:left;">июль<th>
           </tr>  
           <tr>
+	  
              <td style="border: 1px solid; text-align: left;">ПН</td>
              <td style="border: 1px solid; text-align: left;">ВТ</td>
              <td style="border: 1px solid; text-align: left;">СР</td>
@@ -573,6 +602,7 @@
              <td style="border: 1px solid; text-align: left;">ВС</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">1</td>
              <td style="border: 1px solid; text-align: left;">2</td>
              <td style="border: 1px solid; text-align: left;">3</td>
@@ -583,6 +613,7 @@
              <td style="border: 1px solid; text-align: left;">8</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">9</td>
              <td style="border: 1px solid; text-align: left;">10</td>
              <td style="border: 1px solid; text-align: left;">11</td>  
@@ -593,6 +624,7 @@
              <td style="border: 1px solid; text-align: left;">16</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">17</td>
              <td style="border: 1px solid; text-align: left;">18</td>
              <td style="border: 1px solid; text-align: left;">19</td>
@@ -603,6 +635,7 @@
              <td style="border: 1px solid; text-align: left;">24</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">25</td>
              <td style="border: 1px solid; text-align: left;">26</td>
              <td style="border: 1px solid; text-align: left;">27</td>
@@ -614,6 +647,7 @@
               <th style="background-color:text-align:left;">август<th>
           </tr>  
           <tr>
+	  
              <td style="border: 1px solid; text-align: left;">ПН</td>
              <td style="border: 1px solid; text-align: left;">ВТ</td>
              <td style="border: 1px solid; text-align: left;">СР</td>
@@ -624,6 +658,7 @@
              <td style="border: 1px solid; text-align: left;">ВС</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">1</td>
              <td style="border: 1px solid; text-align: left;">2</td>
              <td style="border: 1px solid; text-align: left;">3</td>
@@ -634,6 +669,7 @@
              <td style="border: 1px solid; text-align: left;">8</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">9</td>
              <td style="border: 1px solid; text-align: left;">10</td>
              <td style="border: 1px solid; text-align: left;">11</td>  
@@ -644,6 +680,7 @@
              <td style="border: 1px solid; text-align: left;">16</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">17</td>
              <td style="border: 1px solid; text-align: left;">18</td>
              <td style="border: 1px solid; text-align: left;">19</td>
@@ -653,7 +690,8 @@
              <td style="border: 1px solid; text-align: left;">23</td>
              <td style="border: 1px solid; text-align: left;">24</td>
           </tr>
-          <tn>        
+          <tn> 
+	  
              <td style="border: 1px solid; text-align: left;">25</td>
              <td style="border: 1px solid; text-align: left;">26</td>
              <td style="border: 1px solid; text-align: left;">27</td>
@@ -665,6 +703,7 @@
             <th style="background-color:text-align:left;">сентябрь<th>
           </tr>  
           <tr>
+	  
              <td style="border: 1px solid; text-align: left;">ПН</td>
              <td style="border: 1px solid; text-align: left;">ВТ</td>
              <td style="border: 1px solid; text-align: left;">СР</td>
@@ -675,6 +714,7 @@
              <td style="border: 1px solid; text-align: left;">ВС</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">1</td>
              <td style="border: 1px solid; text-align: left;">2</td>
              <td style="border: 1px solid; text-align: left;">3</td>
@@ -685,6 +725,7 @@
              <td style="border: 1px solid; text-align: left;">8</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">9</td>
              <td style="border: 1px solid; text-align: left;">10</td>
              <td style="border: 1px solid; text-align: left;">11</td>  
@@ -695,6 +736,7 @@
              <td style="border: 1px solid; text-align: left;">16</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">17</td>
              <td style="border: 1px solid; text-align: left;">18</td>
              <td style="border: 1px solid; text-align: left;">19</td>
@@ -704,7 +746,8 @@
              <td style="border: 1px solid; text-align: left;">23</td>
              <td style="border: 1px solid; text-align: left;">24</td>
           </tr>
-          <tn>          	
+          <tn> 
+	  
              <td style="border: 1px solid; text-align: left;">25</td>
              <td style="border: 1px solid; text-align: left;">26</td>
              <td style="border: 1px solid; text-align: left;">27</td>
@@ -716,6 +759,7 @@
               <th style="background-color:text-align:left;">октябрь<th>
           </tr>  
           <tr>
+	  
              <td style="border: 1px solid; text-align: left;">ПН</td>
              <td style="border: 1px solid; text-align: left;">ВТ</td>
              <td style="border: 1px solid; text-align: left;">СР</td>
@@ -726,6 +770,7 @@
              <td style="border: 1px solid; text-align: left;">ВС</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">1</td>
              <td style="border: 1px solid; text-align: left;">2</td>
              <td style="border: 1px solid; text-align: left;">3</td>
@@ -736,6 +781,7 @@
              <td style="border: 1px solid; text-align: left;">8</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">9</td>
              <td style="border: 1px solid; text-align: left;">10</td>
              <td style="border: 1px solid; text-align: left;">11</td>  
@@ -746,6 +792,7 @@
              <td style="border: 1px solid; text-align: left;">16</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">17</td>
              <td style="border: 1px solid; text-align: left;">18</td>
              <td style="border: 1px solid; text-align: left;">19</td>
@@ -755,7 +802,8 @@
              <td style="border: 1px solid; text-align: left;">23</td>
              <td style="border: 1px solid; text-align: left;">24</td>
           </tr>
-          <tn>          	
+          <tn> 
+	  
              <td style="border: 1px solid; text-align: left;">25</td>
              <td style="border: 1px solid; text-align: left;">26</td>
              <td style="border: 1px solid; text-align: left;">27</td>
@@ -767,6 +815,7 @@
            <th style="background-color:text-align:left;">ноябрь<th>
           </tr>  
           <tr>
+	  
              <td style="border: 1px solid; text-align: left;">ПН</td>
              <td style="border: 1px solid; text-align: left;">ВТ</td>
              <td style="border: 1px solid; text-align: left;">СР</td>
@@ -777,6 +826,7 @@
              <td style="border: 1px solid; text-align: left;">ВС</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">1</td>
              <td style="border: 1px solid; text-align: left;">2</td>
              <td style="border: 1px solid; text-align: left;">3</td>
@@ -787,6 +837,7 @@
              <td style="border: 1px solid; text-align: left;">8</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">9</td>
              <td style="border: 1px solid; text-align: left;">10</td>
              <td style="border: 1px solid; text-align: left;">11</td>  
@@ -797,6 +848,7 @@
              <td style="border: 1px solid; text-align: left;">16</td>
           </tr>
           <tn>
+	  
              <td style="border: 1px solid; text-align: left;">17</td>
              <td style="border: 1px solid; text-align: left;">18</td>
              <td style="border: 1px solid; text-align: left;">19</td>
@@ -806,7 +858,9 @@
              <td style="border: 1px solid; text-align: left;">23</td>
              <td style="border: 1px solid; text-align: left;">24</td>
           </tr>
-          <tn>     	
+          <tn> 
+
+   
              <td style="border: 1px solid; text-align: left;">25</td>
              <td style="border: 1px solid; text-align: left;">26</td>
              <td style="border: 1px solid; text-align: left;">27</td>
@@ -829,6 +883,7 @@
              <td style="border: 1px solid; text-align: left;">ВС</td>
           </tr>
           <tn>
+		  
              <td style="border: 1px solid; text-align: left;">1</td>
              <td style="border: 1px solid; text-align: left;">2</td>
              <td style="border: 1px solid; text-align: left;">3</td>
@@ -839,6 +894,7 @@
              <td style="border: 1px solid; text-align: left;">8</td>
           </tr>
           <tn>
+		  
              <td style="border: 1px solid; text-align: left;">9</td>
              <td style="border: 1px solid; text-align: left;">10</td>
              <td style="border: 1px solid; text-align: left;">11</td>  
@@ -849,6 +905,7 @@
              <td style="border: 1px solid; text-align: left;">16</td>
           </tr>
           <tn>
+		  
              <td style="border: 1px solid; text-align: left;">17</td>
              <td style="border: 1px solid; text-align: left;">18</td>
              <td style="border: 1px solid; text-align: left;">19</td>
@@ -859,6 +916,7 @@
              <td style="border: 1px solid; text-align: left;">24</td>
           </tr>
           <tn>
+		  
              <td style="border: 1px solid; text-align: left;">25</td>
              <td style="border: 1px solid; text-align: left;">26</td>
              <td style="border: 1px solid; text-align: left;">27</td>
