@@ -187,7 +187,7 @@
 <a href="https://dnevnik.ru/userfeed">денвник</a>
 
 <table style="border: 1px solid black;">
-		 <tr>
+ <tr>
           <th style="background-color:text-align:left;">цена</th>
            <th style="background-color:text-align:left;">название</th>        
             <th style="background-color:text-align:left;">описание</th>
@@ -224,38 +224,8 @@
            <th style="background-color:text-align:left;">название</th>        
             <th style="background-color:text-align:left;">описание</th>
          </tr>  
-	
-          <tr>
-             <td style="border: 1px solid; text-align: left;">200</td>
-             <td style="border: 1px solid; text-align: left;">блюдо1</td>
-             <td style="border: 1px solid; text-align: left;">описание</td>
-           </tr>
-          <tn>
-             <td style="border: 1px solid; text-align: left;">100</td>
-             <td style="border: 1px solid; text-align: left;">блюдо2</td>
-             <td style="border: 1px solid; text-align: left;">описание</td>
-         </tr>
-        </tr>
-	
-          <tn>
-             <td style="border: 1px solid; text-align: left;">430</td>
-             <td style="border: 1px solid; text-align: left;">блюдо3</td>
-             <td style="border: 1px solid; text-align: left;">опсание</td>
-         </tr>
-        </tr>
-	
-          <tn>
-             <td style="border: 1px solid; text-align: left;">160</td>
-             <td style="border: 1px solid; text-align: left;">блюдо4</td>
-             <td style="border: 1px solid; text-align: left;">описание</td> 
-	     
-	<table style="border: 1px solid black;">
-		 <tr>
-          <th style="background-color:text-align:left;">цена</th>
-           <th style="background-color:text-align:left;">название</th>        
-            <th style="background-color:text-align:left;">описание</th>
-         </tr>  
-	 
+
+ 
           <tr>
              <td style="border: 1px solid; text-align: left;">200</td>
              <td style="border: 1px solid; text-align: left;">блюдо1</td>
@@ -263,7 +233,45 @@
            </tr>
           <tn>
 
+   
+             <td style="border: 1px solid; text-align: left;">100</td>
+             <td style="border: 1px solid; text-align: left;">блюдо2</td>
+             <td style="border: 1px solid; text-align: left;">описание</td>
+         </tr>
+        </tr>
+	
+          <tn>
+	  
+             <td style="border: 1px solid; text-align: left;">430</td>
+             <td style="border: 1px solid; text-align: left;">блюдо3</td>
+             <td style="border: 1px solid; text-align: left;">опсание</td>
+         </tr>
+        </tr>
+	
+          <tn>
+	  
+             <td style="border: 1px solid; text-align: left;">160</td>
+             <td style="border: 1px solid; text-align: left;">блюдо4</td>
+             <td style="border: 1px solid; text-align: left;">описание</td> 
+	     
+	<table style="border: 1px solid black;">
+		 <tr>
+   
+          <th style="background-color:text-align:left;">цена</th>
+           <th style="background-color:text-align:left;">название</th>        
+            <th style="background-color:text-align:left;">описание</th>
+         </tr>  
+	 
+          <tr>
+	  
+             <td style="border: 1px solid; text-align: left;">200</td>
+             <td style="border: 1px solid; text-align: left;">блюдо1</td>
+             <td style="border: 1px solid; text-align: left;">описание</td>
+           </tr>
+          <tn>
+
 <td style="border: 1px solid; text-align: left;">100</td>
+
              <td style="border: 1px solid; text-align: left;">блюдо2</td>
              <td style="border: 1px solid; text-align: left;">описание</td>
          </tr>
@@ -313,6 +321,8 @@
             <th style="background-color:text-align:left;">январь</th>
           </tr>  
           <tr>
+	  
+		  
              <td style="border: 1px solid; text-align: left;">ПН</td>
              <td style="border: 1px solid; text-align: left;">ВТ</td>
              <td style="border: 1px solid; text-align: left;">СР</td>
@@ -323,7 +333,8 @@
              <td style="border: 1px solid; text-align: left;">ВС</td>
           </tr>
           <tn>
-		  
+
+    
              <td style="border: 1px solid; text-align: left;">1</td>
              <td style="border: 1px solid; text-align: left;">2</td>
              <td style="border: 1px solid; text-align: left;">3</td>
@@ -332,9 +343,11 @@
              <td style="border: 1px solid; text-align: left;">6</td>
              <td style="border: 1px solid; text-align: left;">7</td>
              <td style="border: 1px solid; text-align: left;">8</td>
+	     
           </tr>
           <tn>
-	  
+
+   
              <td style="border: 1px solid; text-align: left;">9</td>
              <td style="border: 1px solid; text-align: left;">10</td>
              <td style="border: 1px solid; text-align: left;">11</td>  
@@ -343,9 +356,12 @@
              <td style="border: 1px solid; text-align: left;">14</td>
              <td style="border: 1px solid; text-align: left;">15</td>  
              <td style="border: 1px solid; text-align: left;">16</td>
+
+      
           </tr>
           <tn>
-	  
+
+   
              <td style="border: 1px solid; text-align: left;">17</td>
              <td style="border: 1px solid; text-align: left;">18</td>
              <td style="border: 1px solid; text-align: left;">19</td>
@@ -354,9 +370,12 @@
              <td style="border: 1px solid; text-align: left;">22</td>
              <td style="border: 1px solid; text-align: left;">23</td>
              <td style="border: 1px solid; text-align: left;">24</td>
+
+      
           </tr>
           <tn>
-	  
+
+   
              <td style="border: 1px solid; text-align: left;">25</td>
              <td style="border: 1px solid; text-align: left;">26</td>
              <td style="border: 1px solid; text-align: left;">27</td>
@@ -364,10 +383,14 @@
              <td style="border: 1px solid; text-align: left;">29</td>
              <td style="border: 1px solid; text-align: left;">30</td>
              <td style="border: 1px solid; text-align: left;">31</td>
+
+      
         <tr>
           <th style="background-color:text-align:left;">февраль</th>
           </tr>  
           <tr>
+
+   
 	  
              <td style="border: 1px solid; text-align: left;">ПН</td>
              <td style="border: 1px solid; text-align: left;">ВТ</td>
