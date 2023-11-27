@@ -92,45 +92,6 @@
 </header>
 <div id="calendar"></div>
 
-<script>
-  function createCalendar(year, month) {
-    const daysInMonth = 32 - new Date(year, month, 32).getDate();
-    const firstDay = new Date(year, month, 1).getDay();
-
-    const monthNames = [
-      "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-      "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
-    ];
-
-    let html = '<h3>' + monthNames[month] + ' ' + year + '</h3>';
-    html += '<table>';
-    html += '<tr><th>Пн</th><th>Вт</th><th>Ср</th><th>Чт</th><th>Пт</th><th>Сб</th><th>Вс</th></tr>';
-    let day = 1;
-
-    for (let i = 0; i < 6; i++) {
-      html += '<tr>';
-
-      for (let j = 0; j < 7; j++) {
-        if (i === 0 && j < firstDay) {
-          html += '<td></td>';
-        } else if (day > daysInMonth) {
-          break;
-        } else {
-          html += '<td>' + day + '</td>';
-          day++;
-        }
-      }
-      html += '</tr>';
-    }
-    html += '</table>';
-
-    document.getElementById('calendar').innerHTML = html;
-  }
-
-  // Текущая дата
-  const currentDate = new Date();
-  const currentYear = currentDate.getFullYear();
-  const currentMonth = currentDate.getMonth();
 
   createCalendar(currentYear, currentMonth);
 </script>
@@ -140,15 +101,15 @@
         <li>  информация о вашей компании или проекте </li>
     </section>
 
-    <section id="services">
+   <section id="services">
         <h2>Услуги</h2>
         <li> информация о предоставляемых услугах </li>
     </section>
 
-    <section id="contact">
+ <section id="contact">
         <h2>Контакты</h2>
         <li> контактная информация</li>
-    </section>
+</section>
 </main>
 
 <footer>
@@ -237,14 +198,14 @@
            </tr>
 <tn>
 
-    <td style="border: 1px solid; text-align: left;">100</td>
+ <td style="border: 1px solid; text-align: left;">100</td>
     <td style="border: 1px solid; text-align: left;">блюдо2</td>
              <td style="border: 1px solid; text-align: left;">описание</td>
          </tr>
         </tr>
           <tn>
 
-             <td style="border: 1px solid; text-align: left;">430</td>
+ <td style="border: 1px solid; text-align: left;">430</td>
              <td style="border: 1px solid; text-align: left;">блюдо3</td>
              <td style="border: 1px solid; text-align: left;">опсание</td>
          </tr>
@@ -252,7 +213,7 @@
         </tr>
           <tn>
 
-             <td style="border: 1px solid; text-align: left;">160</td>
+ <td style="border: 1px solid; text-align: left;">160</td>
              <td style="border: 1px solid; text-align: left;">блюдо4</td>
              <td style="border: 1px solid; text-align: left;">описание</td>
 
@@ -296,14 +257,14 @@
            </tr>
           <tn>
 
-             <td style="border: 1px solid; text-align: left;">100</td>
+<td style="border: 1px solid; text-align: left;">100</td>
              <td style="border: 1px solid; text-align: left;">блюдо2</td>
              <td style="border: 1px solid; text-align: left;">описание</td>
          </tr>
         </tr>
           <tn>
 
-             <td style="border: 1px solid; text-align: left;">430</td>
+ <td style="border: 1px solid; text-align: left;">430</td>
              <td style="border: 1px solid; text-align: left;">блюдо3</td>
              <td style="border: 1px solid; text-align: left;">опсание</td>
          </tr>
@@ -311,7 +272,7 @@
         </tr>
           <tn>
 
-             <td style="border: 1px solid; text-align: left;">160</td>
+<td style="border: 1px solid; text-align: left;">160</td>
              <td style="border: 1px solid; text-align: left;">блюдо4</td>
              <td style="border: 1px solid; text-align: left;">описание</td>
 
