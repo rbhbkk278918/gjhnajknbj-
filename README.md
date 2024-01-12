@@ -14,6 +14,21 @@
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+    <!-- Добавьте кнопку для поиска, если нужно -->
+    <div class="search">
+        <input type="text" placeholder="Поиск...">
+        <button type="submit">Найти</button>
+    </div>
+</header>
+<div id="calendar"></div>
+
 
     <h2>Калькулятор</h2>
 
@@ -65,4 +80,12 @@
         }
     </script>
 
-</body>
+<main>
+    <section id="about">
+        <h2>О нас</h2>
+        <li>  информация о вашей компании или проекте </li>
+    </section>
+
+    <section id="services">
+        <h2>Услуги</h2>
+        <li> информация о предостав
