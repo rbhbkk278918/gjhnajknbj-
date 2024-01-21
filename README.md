@@ -5,10 +5,10 @@
     <title>Простой калькулятор</title>
     <style>
         input, button {
-            width: 50px;
+            width: 500px;
             height: 50px;
             font-size: 18px;
-            margin: 50px;
+            margin: 5px;
         }
     </style>
 </head>
