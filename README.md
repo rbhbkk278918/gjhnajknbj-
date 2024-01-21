@@ -7,8 +7,8 @@
         input, button {
             width: 50px;
             height: 50px;
-            font-size: 18px;
-            margin: 5px;
+            font-size: 180px;
+            margin: 50px;
         }
     </style>
 </head>
@@ -75,11 +75,7 @@
         </ul>
     </nav>
   
-<main>
-    <section id="about">
-        <h2>О нас</h2>
-        <li>  информация о вашей компании или проекте </li>
-    </section>
+
 
     <section id="services">
         <h2>Услуги</h2>
