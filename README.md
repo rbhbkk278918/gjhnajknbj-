@@ -7,7 +7,7 @@
         input, button {
             width: 50px;
             height: 50px;
-            font-size: 180px;
+            font-size: 18px;
             margin: 50px;
         }
     </style>
