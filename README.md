@@ -14,19 +14,8 @@
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-    </nav>
-    <!-- Добавьте кнопку для поиска, если нужно -->
-    <div class="search">
-        <input type="text" placeholder="Поиск...">
-        <button type="submit">Найти</button>
-    </div>
-</header>
+    
+  
 <div id="calendar"></div>
 
 
@@ -79,7 +68,14 @@
             }
         }
     </script>
-
+    <nav>
+        <ul>
+            <ul><a href="#about">О нас</a></ul>
+            <ul><a href="#services">Услуги</a></ul>
+            <ul><a href="#contact">Контакты</a></ul>
+        </ul>
+    </nav>
+  
 <main>
     <section id="about">
         <h2>О нас</h2>
