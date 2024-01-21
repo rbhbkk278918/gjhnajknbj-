@@ -5,7 +5,7 @@
     <title>Простой калькулятор</title>
     <style>
         input, button {
-            width: 500px;
+            width: 250px;
             height: 50px;
             font-size: 18px;
             margin: 5px;
