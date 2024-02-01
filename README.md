@@ -122,18 +122,24 @@
             // Проверяем, что targetSquare — клетка доски и она не пуста
             if (targetSquare && targetSquare.classList.contains('square') && targetSquare.textContent === '') {
                 targetSquare.textContent = draggedPiece.textContent;
-                draggedPiece.textContent = '';
+                draggedPiece.textContent = ''; // очищаем исходную клетку
+                draggedPiece.style.position = '';
+                draggedPiece.style.zIndex = '';
+                draggedPiece.style.left = '';
+                draggedPiece.style.top = '';
+
+                document.removeEventListener('mousemove', dragPiece);
+                document.removeEventListener('mouseup', endDrag);
+
+                draggedPiece = null;
+            } else {
+                // Возвращаем фигуру на исходное место
+                draggedPiece.style.position = '';
+                draggedPiece.style.zIndex = '';
+                draggedPiece.style.left = '';
+                draggedPiece.style.top = '';
             }
-
-            draggedPiece.style.position = '';
-            draggedPiece.style.zIndex = '';
-            draggedPiece.style.left = '';
-            draggedPiece.style.top = '';
-
-            document.removeEventListener('mousemove', dragPiece);
-            document.removeEventListener('mouseup', endDrag);
-
-            draggedPiece = null;
         }
     }
 </script>
+
