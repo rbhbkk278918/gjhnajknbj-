@@ -2,81 +2,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Простой калькулятор</title>
+    <title>Шахматы</title>
     <style>
-        input, button {
-            width: 250px;
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 50px);
+            grid-template-rows: repeat(8, 50px);
+        }
+
+        .square {
+            width: 50px;
             height: 50px;
-            font-size: 18px;
-            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            background-color: #eee;
+        }
+
+        .white {
+            background-color: #fff;
+        }
+
+        .draggable {
+            cursor: pointer;
+            user-select: none;
         }
     </style>
 </head>
 <body>
-    
-  
-<div id="calendar"></div>
 
+<div id="chessboard" class="chessboard"></div>
 
-    <h2>Калькулятор</h2>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const chessboard = document.getElementById('chessboard');
 
-    <input type="text" id="result" disabled>
+        // Создаем шахматную доску
+        for (let row = 0; row < 8; row++) {
+            for (let col = 0; col < 8; col++) {
+                const square = document.createElement('div');
+                square.className = `square ${((row + col) % 2 === 0) ? 'white' : ''}`;
+                square.dataset.row = row;
+                square.dataset.col = col;
 
-    <br>
-
-    <button onclick="appendToResult('1')">1</button>
-    <button onclick="appendToResult('2')">2</button>
-    <button onclick="appendToResult('3')">3</button>
-    <button onclick="appendToResult('+')">+</button>
-
-    <br>
-
-    <button onclick="appendToResult('4')">4</button>
-    <button onclick="appendToResult('5')">5</button>
-    <button onclick="appendToResult('6')">6</button>
-    <button onclick="appendToResult('-')">-</button>
-
-    <br>
-
-    <button onclick="appendToResult('7')">7</button>
-    <button onclick="appendToResult('8')">8</button>
-    <button onclick="appendToResult('9')">9</button>
-    <button onclick="appendToResult('*')">*</button>
-
-    <br>
-
-    <button onclick="clearResult()">C</button>
-    <button onclick="appendToResult('0')">0</button>
-    <button onclick="calculateResult()">=</button>
-    <button onclick="appendToResult('/')">/</button>
-
-    <script>
-        function appendToResult(value) {
-            document.getElementById('result').value += value;
-        }
-
-        function clearResult() {
-            document.getElementById('result').value = '';
-        }
-
-        function calculateResult() {
-            try {
-                document.getElementById('result').value = eval(document.getElementById('result').value);
-            } catch (error) {
-                document.getElementById('result').value = 'Error';
+                chessboard.appendChild(square);
             }
         }
-    </script>
-    <nav>
-        <ul>
-            <ul><a href="#about">О нас</a></ul>
-            <ul><a href="#services">Услуги</a></ul>
-            <ul><a href="#contact">Контакты</a></ul>
-        </ul>
-    </nav>
-  
+
+        // Задаем начальное расположение фигур с перемешиванием
+        setStartingPosition();
+
+        // Добавляем обработчики событий для перемещения фигур
+        document.querySelectorAll('.square').forEach((square) => {
+            square.addEventListener('mousedown', startDrag);
+        });
+    });
+
+    function setStartingPosition() {
+        const pieces = ['♜', '♞', '♝', '♛', '♚', '♝', '♞', '♜'];
+        const shuffledPieces = shuffleArray(pieces);
+
+        document.querySelectorAll('.square').forEach((square, index) => {
+            const row = Math.floor(index / 8);
+            const col = index % 8;
+
+            if (row === 0 || row === 7) {
+                square.textContent = shuffledPieces[col];
+                square.classList.add('draggable');
+            }
+
+            if (row === 1 || row === 6) {
+                square.textContent = '♟';
+                square.classList.add('draggable');
+            }
+        });
+    }
+
+    function shuffleArray(array) {
+        // Простой алгоритм перемешивания массива
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    let draggedPiece = null;
+
+    function startDrag(event) {
+        const square = event.target;
+        if (square.classList.contains('draggable')) {
+            draggedPiece = square;
+            document.addEventListener('mousemove', dragPiece);
+            document.addEventListener('mouseup', endDrag);
+        }
+    }
+
+    function dragPiece(event) {
+        if (draggedPiece) {
+            const mouseX = event.clientX - draggedPiece.clientWidth / 2;
+            const mouseY = event.clientY - draggedPiece.clientHeight / 2;
+
+            draggedPiece.style.position = 'absolute';
+            draggedPiece.style.zIndex = 1000;
+            draggedPiece.style.left = mouseX + 'px';
+            draggedPiece.style.top = mouseY + 'px';
+        }
+    }
+
+    function endDrag() {
+        if (draggedPiece) {
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+
+            // Найти клетку, над которой находится фигура
+            const targetSquare = document.elementFromPoint(mouseX, mouseY);
+
+            // Проверяем, что targetSquare — клетка доски и она не пуста
+            if (targetSquare && targetSquare.classList.contains('square') && targetSquare.textContent === '') {
+                targetSquare.textContent = draggedPiece.textContent;
+                draggedPiece.textContent = ''; // очищаем исходную клетку
+                draggedPiece.style.position = '';
+                draggedPiece.style.zIndex = '';
+                draggedPiece.style.left = '';
+                draggedPiece.style.top = '';
+
+                document.removeEventListener('mousemove', dragPiece);
+                document.removeEventListener('mouseup', endDrag);
+
+                draggedPiece = null;
+            } else {
+                // Возвращаем фигуру на исходное место
+                draggedPiece.style.position = '';
+                draggedPiece.style.zIndex = '';
+                draggedPiece.style.left = '';
+                draggedPiece.style.top = '';
+            }
+        }
+    }
+</script>
 
 
-    <section id="services">
-        <h2>Услуги</h2>
-       
