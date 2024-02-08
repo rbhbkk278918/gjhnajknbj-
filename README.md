@@ -1,10 +1,29 @@
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инженерный Калькулятор</title>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
@@ -12,14 +31,14 @@
     <br>
     <button onclick="clearDisplay()">C</button>
     <button onclick="backspace()">⌫</button>
-    <button onclick="appendToDisplay('sin(')">sin</button>
-    <button onclick="appendToDisplay('cos(')">cos</button>
-    <button onclick="appendToDisplay('tan(')">tan</button>
+    <button onclick="appendToDisplay('Math.sin(')">sin</button>
+    <button onclick="appendToDisplay('Math.cos(')">cos</button>
+    <button onclick="appendToDisplay('Math.tan(')">tan</button>
     <br>
-    <button onclick="appendToDisplay('log(')">log</button>
-    <button onclick="appendToDisplay('exp(')">exp</button>
-    <button onclick="appendToDisplay('sqrt(')">√</button>
-    <button onclick="appendToDisplay('pi')">π</button>
+    <button onclick="appendToDisplay('Math.log(')">log</button>
+    <button onclick="appendToDisplay('Math.exp(')">exp</button>
+    <button onclick="appendToDisplay('Math.sqrt(')">√</button>
+    <button onclick="appendToDisplay('Math.PI')">π</button>
     <button onclick="appendToDisplay('**')">^</button>
     <br>
     <button onclick="appendToDisplay('7')">7</button>
@@ -43,11 +62,11 @@
     <button onclick="appendToDisplay('0')">0</button>
     <button onclick="appendToDisplay('.')">.</button>
     <button onclick="calculate()">=</button>
-    <button onclick="appendToDisplay('abs(')">|x|</button>
+    <button onclick="appendToDisplay('Math.abs(')">|x|</button>
     <button onclick="appendToDisplay('!')">!</button>
-    <button onclick="appendToDisplay('sinDeg(')">sinDeg</button>
-    <button onclick="appendToDisplay('cosDeg(')">cosDeg</button>
-    <button onclick="appendToDisplay('tanDeg(')">tanDeg</button>
+    <button onclick="appendToDisplay('Math.sin(Math.PI/180*')">sinDeg</button>
+    <button onclick="appendToDisplay('Math.cos(Math.PI/180*')">cosDeg</button>
+    <button onclick="appendToDisplay('Math.tan(Math.PI/180*')">tanDeg</button>
 
     <script>
         function appendToDisplay(value) {
@@ -85,5 +104,4 @@
             return n * factorial(n - 1);
         }
     </script>
-
 
