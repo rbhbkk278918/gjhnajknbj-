@@ -11,12 +11,12 @@
             margin: 20px;
         }
         input {
-            width: 100%;
+            width: 10%;
             padding: 10px;
             margin-bottom: 10px;
         }
         button {
-            width: 100%;
+            width: 10%;
             padding: 10px;
             background-color: #4CAF50;
             color: white;
