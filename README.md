@@ -26,7 +26,6 @@
     </style>
 </head>
 <body>
-
     <input type="text" id="display" readonly>
     <br>
     <button onclick="clearDisplay()">C</button>
