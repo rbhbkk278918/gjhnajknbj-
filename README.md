@@ -84,8 +84,8 @@
             }
             return n * factorial(n - 1);
         }
-    </script>
-<script>
+
+
     function appendToDisplay(value) {
         document.getElementById('display').value += value;
     }
