@@ -144,5 +144,34 @@
     function customSqrt(value) {
         return Math.sqrt(value);
     }
+
+
+
+    // Добавленные функции для кастомных вычислений
+    function customSin(value) {
+        // Преобразование угла из градусов в радианы
+        var radians = value * Math.PI / 180;
+        return Math.sin(radians);
+    }
+
+    function customCos(value) {
+        // Преобразование угла из градусов в радианы
+        var radians = value * Math.PI / 180;
+        return Math.cos(radians);
+    }
+
+    function customTan(value) {
+        // Преобразование угла из градусов в радианы
+        var radians = value * Math.PI / 180;
+        return Math.tan(radians);
+    }
+
+    function customSqrt(value) {
+        // Проверка на отрицательное число
+        if (value < 0) {
+            return 'Ошибка: Квадратный корень из отрицательного числа';
+        }
+        return Math.sqrt(value);
+    }
 </script>
 
