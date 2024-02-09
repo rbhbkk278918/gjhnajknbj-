@@ -1,24 +1,42 @@
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инженерный Калькулятор</title>
-  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        input {
+            width: 200px;
+            font-size: 18px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
     <input type="text" id="display" readonly>
     <br>
     <button onclick="clearDisplay()">C</button>
     <button onclick="backspace()">⌫</button>
-    <button onclick="appendToDisplay('Math.sin(')">sin</button>
-    <button onclick="appendToDisplay('Math.cos(')">cos</button>
-    <button onclick="appendToDisplay('Math.tan(')">tan</button>
+    <button onclick="appendToDisplay('customSin(')">sin</button>
+    <button onclick="appendToDisplay('customCos(')">cos</button>
+    <button onclick="appendToDisplay('customTan(')">tan</button>
     <br>
     <button onclick="appendToDisplay('Math.log(')">log</button>
     <button onclick="appendToDisplay('Math.exp(')">exp</button>
-    <button onclick="appendToDisplay('Math.sqrt(')">√</button>
+    <button onclick="appendToDisplay('customSqrt(')">√</button>
     <button onclick="appendToDisplay('Math.PI')">π</button>
     <button onclick="appendToDisplay('**')">^</button>
     <br>
@@ -45,9 +63,9 @@
     <button onclick="calculate()">=</button>
     <button onclick="appendToDisplay('Math.abs(')">|x|</button>
     <button onclick="appendToDisplay('!')">!</button>
-    <button onclick="appendToDisplay('Math.sin(Math.PI/180*')">sinDeg</button>
-    <button onclick="appendToDisplay('Math.cos(Math.PI/180*')">cosDeg</button>
-    <button onclick="appendToDisplay('Math.tan(Math.PI/180*')">tanDeg</button>
+    <button onclick="appendToDisplay('customSin(Math.PI/180*')">sinDeg</button>
+    <button onclick="appendToDisplay('customCos(Math.PI/180*')">cosDeg</button>
+    <button onclick="appendToDisplay('customTan(Math.PI/180*')">tanDeg</button>
 
     <script>
         function appendToDisplay(value) {
@@ -65,12 +83,16 @@
 
         function calculate() {
             try {
-                // Замена символа '**' на '^' перед вычислением
                 var expression = document.getElementById('display').value.replace(/\*\*/g, '^');
-                // Вычисление факториала
                 expression = expression.replace(/(\d+)!/g, function(match, p1) {
                     return factorial(parseInt(p1));
                 });
+
+                expression = expression.replace(/Math.sin\(/g, 'customSin(');
+                expression = expression.replace(/Math.cos\(/g, 'customCos(');
+                expression = expression.replace(/Math.tan\(/g, 'customTan(');
+                expression = expression.replace(/Math.sqrt\(/g, 'customSqrt(');
+
                 var result = eval(expression);
                 document.getElementById('display').value = result;
             } catch (error) {
@@ -85,93 +107,40 @@
             return n * factorial(n - 1);
         }
 
-
-    function appendToDisplay(value) {
-        document.getElementById('display').value += value;
-    }
-
-    function clearDisplay() {
-        document.getElementById('display').value = '';
-    }
-
-    function backspace() {
-        var currentValue = document.getElementById('display').value;
-        document.getElementById('display').value = currentValue.substring(0, currentValue.length - 1);
-    }
-
-    function calculate() {
-        try {
-            // Замена символа '**' на '^' перед вычислением
-            var expression = document.getElementById('display').value.replace(/\*\*/g, '^');
-            // Вычисление факториала
-            expression = expression.replace(/(\d+)!/g, function(match, p1) {
-                return factorial(parseInt(p1));
-            });
-            
-            // Добавленные алгоритмы
-            expression = expression.replace(/Math.sin\(/g, 'customSin(');
-            expression = expression.replace(/Math.cos\(/g, 'customCos(');
-            expression = expression.replace(/Math.tan\(/g, 'customTan(');
-            expression = expression.replace(/Math.sqrt\(/g, 'customSqrt(');
-
-            var result = eval(expression);
-            document.getElementById('display').value = result;
-        } catch (error) {
-            document.getElementById('display').value = 'Ошибка';
+        function customSin(value) {
+            var radians = value * Math.PI / 180;
+            return Math.sin(radians);
         }
-    }
 
-    function factorial(n) {
-        if (n === 0 || n === 1) {
-            return 1;
+        function customCos(value) {
+            var radians = value * Math.PI / 180;
+            return Math.cos(radians);
         }
-        return n * factorial(n - 1);
-    }
 
-    // Добавленные функции для кастомных вычислений
-    function customSin(value) {
-        return Math.sin(value);
-    }
-
-    function customCos(value) {
-        return Math.cos(value);
-    }
-
-    function customTan(value) {
-        return Math.tan(value);
-    }
-
-    function customSqrt(value) {
-        return Math.sqrt(value);
-    }
-
-
-
-    // Добавленные функции для кастомных вычислений
-    function customSin(value) {
-        // Преобразование угла из градусов в радианы
-        var radians = value * Math.PI / 180;
-        return Math.sin(radians);
-    }
-
-    function customCos(value) {
-        // Преобразование угла из градусов в радианы
-        var radians = value * Math.PI / 180;
-        return Math.cos(radians);
-    }
-
-    function customTan(value) {
-        // Преобразование угла из градусов в радианы
-        var radians = value * Math.PI / 180;
-        return Math.tan(radians);
-    }
-
-    function customSqrt(value) {
-        // Проверка на отрицательное число
-        if (value < 0) {
-            return 'Ошибка: Квадратный корень из отрицательного числа';
+        function customTan(value) {
+            var radians = value * Math.PI / 180;
+            return Math.tan(radians);
         }
-        return Math.sqrt(value);
-    }
-</script>
+
+        function customSqrt(value) {
+            if (value < 0) {
+                return 'Ошибка: Квадратный корень из отрицательного числа';
+            }
+            return Math.sqrt(value);
+        }
+
+        // Keyboard input handling
+        document.addEventListener('keydown', function(event) {
+            // Allow numbers, operators, and some special keys
+            if (/[\d\+\-\*\/\(\)\.\^]/.test(event.key)) {
+                appendToDisplay(event.key);
+            } else if (event.key === 'Enter') {
+                calculate();
+            } else if (event.key === 'Backspace') {
+                backspace();
+            }
+        });
+    </script>
+
+
 
