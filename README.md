@@ -22,7 +22,55 @@
             font-size: 16px;
             padding: 10px;
             margin: 5px;
+        } <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f4;
         }
+
+        input {
+            width: 240px;
+            font-size: 20px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            font-size: 18px;
+            padding: 15px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #4caf50;
+            color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .column {
+            flex: 20%;
+        }
+
+        .calculator-container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+  
     </style>
 </head>
 <body>
