@@ -85,4 +85,64 @@
             return n * factorial(n - 1);
         }
     </script>
+<script>
+    function appendToDisplay(value) {
+        document.getElementById('display').value += value;
+    }
+
+    function clearDisplay() {
+        document.getElementById('display').value = '';
+    }
+
+    function backspace() {
+        var currentValue = document.getElementById('display').value;
+        document.getElementById('display').value = currentValue.substring(0, currentValue.length - 1);
+    }
+
+    function calculate() {
+        try {
+            // Замена символа '**' на '^' перед вычислением
+            var expression = document.getElementById('display').value.replace(/\*\*/g, '^');
+            // Вычисление факториала
+            expression = expression.replace(/(\d+)!/g, function(match, p1) {
+                return factorial(parseInt(p1));
+            });
+            
+            // Добавленные алгоритмы
+            expression = expression.replace(/Math.sin\(/g, 'customSin(');
+            expression = expression.replace(/Math.cos\(/g, 'customCos(');
+            expression = expression.replace(/Math.tan\(/g, 'customTan(');
+            expression = expression.replace(/Math.sqrt\(/g, 'customSqrt(');
+
+            var result = eval(expression);
+            document.getElementById('display').value = result;
+        } catch (error) {
+            document.getElementById('display').value = 'Ошибка';
+        }
+    }
+
+    function factorial(n) {
+        if (n === 0 || n === 1) {
+            return 1;
+        }
+        return n * factorial(n - 1);
+    }
+
+    // Добавленные функции для кастомных вычислений
+    function customSin(value) {
+        return Math.sin(value);
+    }
+
+    function customCos(value) {
+        return Math.cos(value);
+    }
+
+    function customTan(value) {
+        return Math.tan(value);
+    }
+
+    function customSqrt(value) {
+        return Math.sqrt(value);
+    }
+</script>
 
