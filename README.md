@@ -4,6 +4,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инженерный Калькулятор</title>
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            display: inline-block;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.1s ease-in-out;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:active {
+            transform: translateY(1px);
+            box-shadow: none;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+            transition: height 0.5s ease-in-out;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        p a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 10px;
+            padding: 8px 15px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        p a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        main {
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #666;
+        }
+        footer .error {
+            color: red;
+            font-weight: bold;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+    </style>
     <style>
         body {
             font-family: Arial, sans-serif;
