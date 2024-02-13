@@ -14,7 +14,7 @@
             margin-bottom: 10px;
         }
         input {
-            width: calc(100% - 20px);
+            width: calc(10% - 20px);
             padding: 8px;
             margin-bottom: 10px;
             box-sizing: border-box;
@@ -37,8 +37,8 @@
             box-shadow: none;
         }
         iframe {
-            width: 100%;
-            height: 500px;
+            width: 10%;
+            height: 50px;
             border: 1px solid #ccc;
             transition: height 0.5s ease-in-out;
         }
