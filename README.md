@@ -191,10 +191,7 @@
     <button onclick="calculate()">=</button>
     <button onclick="appendToDisplay('Math.abs(')">|x|</button>
     <button onclick="appendToDisplay('!')">!</button>
-    <button onclick="appendToDisplay('customSin(Math.PI/180*')"/button>
-    <button onclick="appendToDisplay('customCos(Math.PI/180*')"></button>
-    <button onclick="appendToDisplay('customTan(Math.PI/180*')"></button>
-
+ 
     <script>
         function appendToDisplay(value) {
             document.getElementById('display').value += value;
