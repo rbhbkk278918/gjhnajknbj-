@@ -160,7 +160,7 @@
     <button onclick="backspace()">⌫</button>
     <button onclick="appendToDisplay('customSin(')">sin</button>
     <button onclick="appendToDisplay('customCos(')">cos</button>
-    <button onclick="appendToDisplay('customTan(')">tan</button>
+    <button onclick="appendToDisplay('customTan(')">tg</button>
     <br>
     <button onclick="appendToDisplay('Math.log(')">log</button>
     <button onclick="appendToDisplay('Math.exp(')">exp</button>
@@ -191,9 +191,9 @@
     <button onclick="calculate()">=</button>
     <button onclick="appendToDisplay('Math.abs(')">|x|</button>
     <button onclick="appendToDisplay('!')">!</button>
-    <button onclick="appendToDisplay('customSin(Math.PI/180*')">sinDeg</button>
-    <button onclick="appendToDisplay('customCos(Math.PI/180*')">cosDeg</button>
-    <button onclick="appendToDisplay('customTan(Math.PI/180*')">tanDeg</button>
+    <button onclick="appendToDisplay('customSin(Math.PI/180*')"/button>
+    <button onclick="appendToDisplay('customCos(Math.PI/180*')"></button>
+    <button onclick="appendToDisplay('customTan(Math.PI/180*')"></button>
 
     <script>
         function appendToDisplay(value) {
